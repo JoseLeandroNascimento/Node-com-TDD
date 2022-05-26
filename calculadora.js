@@ -20,6 +20,10 @@ module.exports ={
     },
     divisao: function(n1,n2){
 
+        if(n2 == 0){
+
+            throw new Error("Divisao por 0")
+        }
         return n1 /n2;
 
     }
